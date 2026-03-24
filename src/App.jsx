@@ -2,6 +2,15 @@ import { useState } from 'react';
 import './App.css';
 import Box from './component/Box';
 
+/*
+1. 박스 2개 (타이틀, 사진, 결과) V
+2. 가위 바위 보 버튼이 있음 V
+3. 버튼을 클릭하면 클릭한 값이 박스에 보임 V
+4. 컴퓨터는 랜덤하게 아이템 선택이 된다.
+5. 3,4의 결과를 가지고 누가 이겼는지 승패를 가른다
+6. 승 -> 초록, 패 -> 빨강, 비김 -> 노랑
+*/
+
 const choice = {
   rock: {
     name: 'Rock',
@@ -27,14 +36,7 @@ function App() {
     setUserSelect(choice[userChoice]);
   };
 
-  /*
-1. 박스 2개 (타이틀, 사진, 결과)
-2. 가위 바위 보 버튼이 있음
-3. 버튼을 클릭하면 클릭한 값이 박스에 보임
-4. 컴퓨터는 랜덤하게 아이템 선택이 된다.
-5. 3,4의 결과를 가지고 누가 이겼는지 승패를 가른다
-6. 승 -> 초록, 패 -> 빨강, 비김 -> 노랑
-*/
+ 
   return (
     <>
       <div className="main">
