@@ -86,9 +86,9 @@ function App() {
   return (
     <>
       <div className="main">
-        <Box title="나" item={userSelect} result={result} />
+        <Box title="user" item={userSelect} result={result} />
         <Box
-          title="상대"
+          title="Computer"
           item={computerSelect}
           result={result}
         />
